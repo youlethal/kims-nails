@@ -1,6 +1,5 @@
 export interface BrandingConfig {
   businessName: string;
-  logoUrl?: string;
   primaryColor: string;
   accentColor: string;
   fontFamily: string;
@@ -9,8 +8,8 @@ export interface BrandingConfig {
 export const defaultConfig = {
   branding: {
     businessName: "Kims Nails",
-    primaryColor: "#f73bde",
-    accentColor: "#f0e033",
+    primaryColor: "#6366f1",
+    accentColor: "#6366f1",
     fontFamily: "Inter, sans-serif"
   },
   modules: ["booking","gallery"],
