@@ -7,7 +7,6 @@ function App() {
   useEffect(() => {
     applyBranding(defaultConfig.branding);
     
-    // Smooth scrolling for anchor links
     const handleAnchorClick = (e: MouseEvent) => {
       const target = e.target as HTMLElement;
       if (target.tagName === 'A' && target.getAttribute('href')?.startsWith('#')) {
@@ -23,6 +22,9 @@ function App() {
     document.addEventListener('click', handleAnchorClick);
     return () => document.removeEventListener('click', handleAnchorClick);
   }, []);
+
+  // Force Vercel rebuild - updated template version
+  console.log('Template updated:', new Date().toISOString());
 
   return (
     <AnimatePresence mode="wait">
