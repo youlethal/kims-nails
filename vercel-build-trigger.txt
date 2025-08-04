@@ -1,0 +1,2 @@
+Template updated: 2025-08-04T21:47:52.434Z
+This file triggers Vercel to rebuild the site with the latest template changes.
